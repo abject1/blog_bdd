@@ -1,0 +1,99 @@
+:root {
+  --primary: #706fd3;
+  --dark: #2c2c54;
+  --accent: #474787;
+  --text: #d1ccc0;
+  --divider: #84817a;
+  --desert: #ccae62;
+  --spring-splash: #218c74;
+  --chilean-fire: #cd6133;
+  --font-family: 'Roboto', 'Segoe UI',sans-serif;
+  --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15); }
+
+/* https: //flatuicolors.com/palette/es */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
+:root {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  color: var(--text);
+  font-family: var(--font-family);
+  background-color: black; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 2rem; }
+
+h1 {
+  font-size: 4.2rem; }
+
+h2 {
+  font-size: 3.8rem; }
+
+h3 {
+  font-size: 3.4rem; }
+
+h4 {
+  font-size: 3rem; }
+
+h5 {
+  font-size: 2.6rem; }
+
+h6 {
+  font-size: 2.2rem; }
+
+ul {
+  list-style: none; }
+
+img {
+  max-width: 100%; }
+
+a {
+  color: var(--text);
+  text-decoration: none; }
+
+.not-seen {
+  display: none; }
+
+.seen {
+  display: block; }
+
+.underline {
+  display: block;
+  margin: auto;
+  min-width: 80vw;
+  min-height: 0.5rem;
+  color: var(--divider); }
+
+body header h1 {
+  text-align: center;
+  color: var(--spring-splash); }
+  body header h1 a {
+    color: unset; }
+
+body header .log {
+  position: absolute;
+  right: 1rem; }
+  body header .log a {
+    color: var(--desert);
+    cursor: grab; }
+    body header .log a i {
+      margin: 0 1rem; }
+    body header .log a:hover {
+      border: 0.2rem solid var(--primary);
+      border-radius: 0.5rem;
+      background-color: white;
+      color: var(--chilean-fire); }

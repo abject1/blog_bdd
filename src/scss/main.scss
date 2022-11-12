@@ -1,0 +1,35 @@
+@import "./variables";
+@import "./reset";
+@import "./utils";
+@import "./media-queries";
+@import "./base";
+@import "./classes";
+
+body {
+    header {
+        h1 {
+            text-align: center;
+            color: var(--spring-splash);
+            a {
+                color: unset;
+            }
+        }
+        .log {
+            position: absolute;
+            right: 1rem;
+            a {
+                color: var(--desert);
+                cursor: grab;
+                i {
+                    margin: 0 1rem;
+                }
+                &:hover {
+                    border: 0.2rem solid var(--primary);
+                    border-radius: 0.5rem;
+                    background-color: white;
+                    color: var(--chilean-fire);
+                }
+            }
+        }
+    }
+}

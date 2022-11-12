@@ -1,0 +1,16 @@
+.not-seen {
+    display: none;
+}
+
+.seen {
+    display: block;
+}
+
+.underline {
+    display: block;
+    margin: auto;
+    min-width: 80vw;
+    min-height: 0.5rem;
+    color: var(--divider);
+}
+

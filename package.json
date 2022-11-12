@@ -1,0 +1,31 @@
+{
+  "name": "blog_bdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w src/scss -o dist/css",
+    "babel": "babel src/js --out-dir dist/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abject1/blog_bdd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abject1/blog_bdd/issues"
+  },
+  "homepage": "https://github.com/abject1/blog_bdd#readme",
+  "dependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "node-sass": "^8.0.0",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0"
+  }
+}
