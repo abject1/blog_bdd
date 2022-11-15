@@ -2,7 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- LINK JS -->
-<script defer src="./dist/js/main.js"></script>
+<script defer src="./dist/js/menuBurger.js"></script>
 <!-- LINK CSS -->
 <link rel="stylesheet" href="./dist/css/main.css">
 <link rel="stylesheet" href="./dist/css/index.css">

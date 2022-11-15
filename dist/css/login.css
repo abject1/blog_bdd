@@ -1,0 +1,43 @@
+:root {
+  --primary: #706fd3;
+  --dark: #2c2c54;
+  --accent: #474787;
+  --text: #d1ccc0;
+  --divider: #84817a;
+  --desert: #ccae62;
+  --spring-splash: #218c74;
+  --chilean-fire: #cd6133;
+  --font-family: 'Roboto', 'Segoe UI',sans-serif;
+  --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15); }
+
+/* https: //flatuicolors.com/palette/es */
+/* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
+body {
+  min-height: 100vh; }
+  body .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body .login h4 {
+      margin-top: 3rem;
+      color: var(--chilean-fire); }
+    body .login form label {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      body .login form label input {
+        margin-top: 0.6rem;
+        width: 25rem;
+        height: 3rem; }
+        body .login form label input::placeholder {
+          text-align: center; }
+    body .login form .btn-submit {
+      display: block;
+      margin: 2rem auto 0 auto; }
+    body .login a {
+      margin-top: 2rem; }

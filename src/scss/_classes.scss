@@ -14,3 +14,56 @@
     color: var(--divider);
 }
 
+.navSeen {
+    display: block;
+    text-align: center;
+    transition: 5s;
+    position: fixed;
+    margin-left: 0.6rem;
+    z-index: 2;
+}
+
+.spanNotSeen {
+    display: none !important;
+}
+                
+.spanRotateUn {
+    rotate: 45deg;
+    transform: translateY(0.2rem);
+    transform: translateX(0.2rem);
+}
+                
+.spanRotateDeux {
+    rotate: 135deg;
+    transform: translateY(-0.2rem);
+    transform: translateX(-0.2rem);
+}
+
+.active {
+    color: var(--primary);
+}
+
+.btn {
+    border-radius: 0.8rem;
+    padding: 0.2rem 0.4rem;
+    &-primary {
+        border: 0.2rem solid var(--primary);
+        background-color: var(--divider);
+        color: white;
+    }
+    &-secondary {
+        border: 0.2rem solid var(--dark);
+        background-color: var(--desert);
+        color: white;
+    }
+    &-danger {
+        border: 0.2rem solid black;
+        background-color: red;
+        color: white;
+    }
+    &-submit {
+        border: 0.2rem solid var(--accent);
+        background-color: var(--dark);
+        color: white;
+    }
+}

@@ -31,5 +31,38 @@ body {
                 }
             }
         }
+        #menuBurger {
+            @include xs {
+                display: block;
+                margin: 0.6rem 2rem;
+            }
+            @include sm {
+                display: none;
+            }
+            @include md {
+                display: none;
+            }
+            @include xl {
+                display: none;
+            }
+            span {
+                display: block;
+                margin: 0.2rem;
+                min-height: 0.2rem;
+                max-width: 1.5rem;
+                background-color: white;
+            }
+        }
+        nav {
+            @include xs {
+                display: none;
+            }
+            li {
+                margin: 0.3rem auto;
+                max-width: 9rem;
+                padding-bottom: 0.2rem;
+                padding: 0.4rem;
+            }
+        }
     }
 }

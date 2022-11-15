@@ -1,0 +1,47 @@
+@import './variables';
+@import './media-queries';
+
+body {
+
+    .createAccount {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+            margin-top: 1.8rem;
+            color: var(--chilean-fire);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            label {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+            input {
+                margin: 0.5rem auto 0.7rem auto;
+                width: 25rem;
+                height: 3rem;
+                
+                &::placeholder {
+                    text-align: center;
+                }
+            }
+            .btn-submit {
+                display: block;
+                margin: 1.2rem auto 0 auto;
+            }
+        }
+
+        a {
+            margin-top: 1.4rem;
+        }
+
+    }
+}

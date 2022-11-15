@@ -1,0 +1,45 @@
+:root {
+  --primary: #706fd3;
+  --dark: #2c2c54;
+  --accent: #474787;
+  --text: #d1ccc0;
+  --divider: #84817a;
+  --desert: #ccae62;
+  --spring-splash: #218c74;
+  --chilean-fire: #cd6133;
+  --font-family: 'Roboto', 'Segoe UI',sans-serif;
+  --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15); }
+
+/* https: //flatuicolors.com/palette/es */
+/* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
+body .createAccount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  body .createAccount h4 {
+    margin-top: 1.8rem;
+    color: var(--chilean-fire); }
+  body .createAccount form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    body .createAccount form label {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; }
+    body .createAccount form input {
+      margin: 0.5rem auto 0.7rem auto;
+      width: 25rem;
+      height: 3rem; }
+      body .createAccount form input::placeholder {
+        text-align: center; }
+    body .createAccount form .btn-submit {
+      display: block;
+      margin: 1.2rem auto 0 auto; }
+  body .createAccount a {
+    margin-top: 1.4rem; }
