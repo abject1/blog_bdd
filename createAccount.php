@@ -2,62 +2,20 @@
 
 include './functionsSQL.php';
 
-/* les erreurs */
-/*const ERREUR_REQUIRED = 'Veuillez remplire le champ';
-const ERREUR_MDP_SHORT = 'Le mot de passe est trop court (8 caractère minimum)';
-const ERREUR_MDP_SPECIAL_CHARACTERE = 'Le mot de passe doit contenir au minimum une majuscule, une minuscule, un nombre et un caractère spécial';
-const ERREUR_MAIL = "L'email est invalide";
-const ERREUR_CONFIRM_MDP = "Le mot de passe et la confirmation de mot de passe ne correspondent pas";
 
-$hash = '$2y$07$BCryptRequires22Chrcte/VlQH0piJtjXl.0t1XkA8pw9dMXTpOq';*/
-$addDate = date('m.d.y');
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-/*$errors = [
-    'name' => '',
-    'prenom' => '',
-    'mail' => '',
-    'mdp' => ''
-];*/
-
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-
-    // $_POST = filter_input_array(INPUT_POST, [
-    //     'lastName' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
-    //     'name' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
-    //     'mail' => FILTER_SANITIZE_EMAIL,
-    //     'password' => FILTER_SANITIZE_FULL_SPECIAL_CHARS,
-
-    // ]);
-
-    $name = $_POST['name'];
-    $lastName = $_POST['lastName'];
+    $nom = $_POST['lastName'];
+    $prenom = $_POST['name'];
     $mail = $_POST['mail'];
     $mdp = $_POST['password'];
-    // $confirmPass = $_POST['confirmPass'];
+    $addDate = date('d.m.y');
+    $connexion = 0;
 
-    // if (!$nom) {
-    //     $errors['name'] = ERREUR_REQUIRED;
-    // }
-    // if (!$prenom) {
-    //     $errors['prenom'] = ERREUR_REQUIRED;
-    // }
-    // if (!$mail) {
-    //     $errors['mail'] = ERREUR_REQUIRED;
-    // }
-    // if (!$mdp) {
-    //     $errors['mdp'] = ERREUR_REQUIRED;
-    // } else if (mb_strlen($mdp) < 8) {
-    //     $errors['mdp'] = ERREUR_MDP_SHORT;
-    // } else if (password_verify($mdp, $hash)) {
-    //     $errors['mdp'] = ERREUR_MDP_SPECIAL_CHARACTERE;
-    // } else if ($mdp !== $confirmPass) {
-    //     $errors['mdp'] = ERREUR_CONFIRM_MDP;
-    // }
+    $stmt = $conn->prepare("INSERT INTO users (nom, prenom, mail, mdp, addDate, connexion) VALUES (?, ?, ?, ?, ?, ?)");
 
-
-    createUser($lastName, $name, $mail, $mdp, $addDate);
-
-    // header('Location : ');
+    $stmt->bind_param('ssssss', $nom, $prenom, $mail, $mdp, $addDate, $connexion);
+    $stmt->execute();
 }
 
 ?>
@@ -75,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <?php include './includes/header.php' ?>
     <div class="createAccount">
         <h4>Creation de compte</h4>
-        <form action="./createAccount.php" method="POST">
+        <form action="./createAccount.php" method="post">
             <input type="hidden" name="id" value="<?php echo $user['id'];  ?>" />
             <input type="hidden" name="action" value="<?php echo $action;  ?>" />
 
