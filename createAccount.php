@@ -18,6 +18,7 @@ if ($conn->connect_error) {
 }
 
 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $nom = $_POST['lastName'] ?? '';
@@ -26,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mdp = $_POST['password'] ?? '';
     $mdpConfirm = $_POST['passwordConfirm'] ?? '';
     date_default_timezone_set('UTC');
-    $addDate = date('d.m.y');
+    $addDate = date('y.m.d');
     $connexion = 0;
 
     $stmt = $conn->prepare("INSERT INTO users (nom, prenom, mail, mdp, addDate, connexion) VALUES (?, ?, ?, ?, ?, ?)");

@@ -23,19 +23,19 @@ body {
     justify-content: center;
     align-items: center; }
     body .login h4 {
-      margin-top: 3rem;
+      margin-top: 8rem;
       color: var(--chilean-fire); }
-    body .login form label {
+    body .login form .form-control label {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      body .login form label input {
-        margin-top: 0.6rem;
-        width: 25rem;
-        height: 3rem; }
-        body .login form label input::placeholder {
-          text-align: center; }
+    body .login form .form-control input {
+      margin-top: 0.6rem;
+      width: 25rem;
+      height: 3rem; }
+      body .login form .form-control input::placeholder {
+        text-align: center; }
     body .login form .btn-submit {
       display: block;
       margin: 2rem auto 0 auto; }
