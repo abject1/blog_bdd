@@ -1,3 +1,11 @@
+<?php
+
+require_once './isloggeding.php';
+
+$currentUser = isLoggedin();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

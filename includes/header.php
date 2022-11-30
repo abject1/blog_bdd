@@ -1,8 +1,15 @@
+<?php
+require_once './isloggeding.php';
+
+$currentUser = isLoggedin();
+
+?>
+
 <header>
     <h1><a href="./index.php">Inifni Blog</a></h1>
     <div class="underline"></div>
     <div class="log">
-        <?php if ($_SERVER['REQUEST_URI'] === '/blog_bdd/index.php' || '/blog_bdd/add-article.php') : ?>
+        <?php if (!$currentUser) : ?>
             <a href="./login.php">Login <i class="fa-solid fa-user"></i></a>
         <?php endif; ?>
     </div>

@@ -1,4 +1,9 @@
 <?php
+
+require_once './isloggeding.php';
+
+$currentUser = isLoggedin();
+
 $errors = '';
 $errorName = '';
 $errorLastname = '';

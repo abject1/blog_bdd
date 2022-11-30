@@ -1,5 +1,13 @@
 <?php
 
+require_once './isloggeding.php';
+
+$currentUser = isLoggedin();
+
+if ($currentUser) {
+    header('Location /blog_bdd/profil.php');
+}
+
 try {
     $conn = new PDO('mysql:host=localhost;dbname=blog', 'root', '', [
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
@@ -28,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($password === $passSave) {
             $sessionId = bin2hex(random_bytes(32));
-            $stmtSession = $conn->prepare('INSERT INTO session VALUES (:sessionid, :userid');
+            $stmtSession = $conn->prepare('INSERT INTO session VALUES (:sessionid, :userid)');
             $stmtSession->bindValue(':userid', $user['id']);
             $stmtSession->bindValue(':sessionid', $sessionId);
             $stmtSession->execute();
