@@ -1,0 +1,37 @@
+.content {
+  width: 80vw;
+  margin: 3rem  auto; }
+  .content h1 {
+    text-align: center;
+    font-size: 180%;
+    text-decoration: underline;
+    color: var(--accent); }
+  .content form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column; }
+    .content form .form-control {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 1rem auto; }
+      .content form .form-control label {
+        margin-bottom: 0.4rem; }
+      .content form .form-control input {
+        height: 2rem;
+        text-align: center; }
+        .content form .form-control input::placeholder {
+          text-align: center; }
+      .content form .form-control select {
+        width: 15rem;
+        height: 2rem;
+        text-align: center; }
+      .content form .form-control textarea {
+        width: 23rem;
+        height: 15rem; }
+    .content form .actions {
+      margin-top: 0.6rem; }
