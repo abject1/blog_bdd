@@ -5,7 +5,6 @@
 <script defer src="./dist/js/menuBurger.js"></script>
 <!-- LINK CSS -->
 <link rel="stylesheet" href="./dist/css/main.css">
-<link rel="stylesheet" href="./dist/css/index.css">
 <!-- LINK GOOGLE FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

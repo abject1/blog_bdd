@@ -4,6 +4,7 @@
   --accent: #474787;
   --text: #d1ccc0;
   --divider: #84817a;
+  --grey50:rgb(68, 68, 67)a;
   --desert: #ccae62;
   --spring-splash: #218c74;
   --chilean-fire: #cd6133;
@@ -84,7 +85,8 @@ a {
   transition: 5s;
   position: fixed;
   margin-left: 0.6rem;
-  z-index: 2; }
+  z-index: 2;
+  background-color: var(--grey50); }
 
 .spanNotSeen {
   display: none !important; }

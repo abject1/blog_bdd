@@ -11,6 +11,7 @@ $currentUser = isLoggedin();
 
 <head>
     <?php include './includes/head.php' ?>
+    <link rel="stylesheet" href="./dist/css/index.css">
     <title>Infini Blog</title>
 </head>
 
