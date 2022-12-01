@@ -11,6 +11,8 @@ $currentUser = isLoggedin();
     <div class="log">
         <?php if (!$currentUser) : ?>
             <a href="./login.php">Login <i class="fa-solid fa-user"></i></a>
+        <?php else : ?>
+            <a href="./logout.php">Logout <i class="fa-solid fa-right-from-bracket"></i></a>
         <?php endif; ?>
     </div>
     <div id="menuBurger">
