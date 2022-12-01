@@ -15,13 +15,15 @@
 }
 
 .navSeen {
+    background-color: var(--grey50);
+    border-radius: 1rem;
+    border: 0.2rem solid red;
     display: block;
     text-align: center;
     transition: 5s;
     position: fixed;
     margin-left: 0.6rem;
     z-index: 2;
-    background-color: var(--grey50);
 }
 
 .spanNotSeen {
