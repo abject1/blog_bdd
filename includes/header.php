@@ -6,8 +6,8 @@ $currentUser = isLoggedin();
 ?>
 
 <header>
-    <h1><a href="./index.php">Inifni Blog</a></h1>
-    <div class="underline"></div>
+    <h1><a href="./index.php">Inifnity Blog</a></h1>
+    <div class="underlineHeader"></div>
     <div class="log">
         <?php if (!$currentUser) : ?>
             <a href="./login.php">Login <i class="fa-solid fa-user"></i></a>

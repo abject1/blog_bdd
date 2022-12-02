@@ -16,3 +16,35 @@
 /* Landscape phone to portrait tablet */
 /* Portrait tablet to landscape and desktop */
 /* Large desktop */
+.container-index .header-personnal h6 {
+  font-size: 180%;
+  text-align: center;
+  display: block;
+  margin: 2rem auto 0 auto;
+  padding: 0.5rem 1rem 0.5rem 1rem; }
+
+.container-index .articles {
+  display: block;
+  margin: 0.6rem auto;
+  padding: 0 3rem; }
+  .container-index .articles .article {
+    display: block;
+    margin: 1.2rem auto;
+    padding: 1.2rem 0.5rem;
+    border: 0.15rem solid var(--primary);
+    border-radius: 1.5rem; }
+    .container-index .articles .article h3 {
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 0.3rem; }
+    .container-index .articles .article h4 {
+      text-align: center;
+      font-size: 100%;
+      margin: 0.3rem auto; }
+    .container-index .articles .article h5 {
+      text-align: center;
+      font-size: 80%;
+      margin: 0.3rem auto; }
+    .container-index .articles .article p {
+      text-align: center;
+      line-height: 2.4rem; }

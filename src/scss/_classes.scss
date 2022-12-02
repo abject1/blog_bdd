@@ -6,14 +6,6 @@
     display: block;
 }
 
-.underline {
-    display: block;
-    margin: auto;
-    min-width: 80vw;
-    min-height: 0.5rem;
-    color: var(--divider);
-}
-
 .navSeen {
     background-color: var(--grey50);
     border-radius: 1rem;
@@ -69,4 +61,20 @@
         background-color: var(--dark);
         color: white;
     }
+}
+
+.underline {
+    background-color: white;
+    width: 50vw;
+    height: 0.4rem;
+    display: block;
+    margin: 0.8rem auto 1rem auto;
+}
+
+.underlineHeader {
+    background-color: white;
+    width: 80vw;
+    height: 0.4rem;
+    display: block;
+    margin: 0rem auto 1.8rem auto;
 }

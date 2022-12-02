@@ -7,9 +7,14 @@
 
 body {
     header {
+        background: linear-gradient(90deg, var(--dark) 16%, var(--primary) 85%);
+        padding-bottom: 1rem;
+        border: 0.15rem solid red;
+        border-radius: 1rem;
         h1 {
             text-align: center;
             color: var(--spring-splash);
+            margin-bottom: 1rem;
             a {
                 color: unset;
             }
