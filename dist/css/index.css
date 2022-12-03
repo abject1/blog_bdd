@@ -16,35 +16,93 @@
 /* Landscape phone to portrait tablet */
 /* Portrait tablet to landscape and desktop */
 /* Large desktop */
+/* hyper large desktop */
 .container-index .header-personnal h6 {
   font-size: 180%;
   text-align: center;
   display: block;
   margin: 2rem auto 0 auto;
-  padding: 0.5rem 1rem 0.5rem 1rem; }
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: var(--dark); }
+  @media (min-width: 1200px) and (max-width: 1999px) {
+    .container-index .header-personnal h6 {
+      font-size: 260%; } }
+  @media (min-width: 2000px) {
+    .container-index .header-personnal h6 {
+      font-size: 350%; } }
+  .container-index .header-personnal h6 a {
+    color: var(--dark); }
 
 .container-index .articles {
   display: block;
   margin: 0.6rem auto;
   padding: 0 3rem; }
+  @media (min-width: 980px) and (max-width: 1199px) {
+    .container-index .articles {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1200px) and (max-width: 1999px) {
+    .container-index .articles {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 2000px) {
+    .container-index .articles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); } }
   .container-index .articles .article {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 1.2rem auto;
     padding: 1.2rem 0.5rem;
     border: 0.15rem solid var(--primary);
     border-radius: 1.5rem; }
+    @media (min-width: 980px) and (max-width: 1199px) {
+      .container-index .articles .article {
+        margin: 1.2rem 0.8rem;
+        padding: 1.2rem 1rem; } }
+    @media (min-width: 1200px) and (max-width: 1999px) {
+      .container-index .articles .article {
+        margin: 1.2rem 1.2rem;
+        padding: 1.2rem 1rem; } }
+    @media (min-width: 2000px) {
+      .container-index .articles .article {
+        margin: 1.2rem 1.6rem;
+        padding: 3rem 4rem; } }
     .container-index .articles .article h3 {
       text-align: center;
       text-decoration: underline;
-      margin-bottom: 0.3rem; }
+      margin-bottom: 0.3rem;
+      color: var(--chilean-fire); }
+      @media (min-width: 2000px) {
+        .container-index .articles .article h3 {
+          font-size: 270%; } }
     .container-index .articles .article h4 {
       text-align: center;
       font-size: 100%;
       margin: 0.3rem auto; }
+      @media (min-width: 1200px) and (max-width: 1999px) {
+        .container-index .articles .article h4 {
+          font-size: 120%; } }
+      @media (min-width: 2000px) {
+        .container-index .articles .article h4 {
+          font-size: 200%; } }
     .container-index .articles .article h5 {
       text-align: center;
       font-size: 80%;
       margin: 0.3rem auto; }
+      @media (min-width: 1200px) and (max-width: 1999px) {
+        .container-index .articles .article h5 {
+          font-size: 100%; } }
+      @media (min-width: 2000px) {
+        .container-index .articles .article h5 {
+          font-size: 160%; } }
     .container-index .articles .article p {
       text-align: center;
       line-height: 2.4rem; }
+      @media (min-width: 1200px) and (max-width: 1999px) {
+        .container-index .articles .article p {
+          font-size: 100%; } }
+      @media (min-width: 2000px) {
+        .container-index .articles .article p {
+          font-size: 180%; } }

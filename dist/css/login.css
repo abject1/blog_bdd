@@ -16,29 +16,102 @@
 /* Landscape phone to portrait tablet */
 /* Portrait tablet to landscape and desktop */
 /* Large desktop */
-body {
-  min-height: 100vh; }
-  body .login {
+/* hyper large desktop */
+body .login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  @media (min-width: 1200px) and (max-width: 1999px) {
+    body .login {
+      margin-top: 7rem; } }
+  @media (min-width: 2000px) {
+    body .login {
+      margin-top: 30rem; } }
+  body .login h4 {
+    margin-top: 8rem;
+    color: var(--chilean-fire); }
+    @media (min-width: 1200px) and (max-width: 1999px) {
+      body .login h4 {
+        font-size: 260%; } }
+    @media (min-width: 2000px) {
+      body .login h4 {
+        font-size: 400%; } }
+  body .login form .form-control label {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    body .login h4 {
-      margin-top: 8rem;
-      color: var(--chilean-fire); }
-    body .login form .form-control label {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-    body .login form .form-control input {
-      margin-top: 0.6rem;
-      width: 25rem;
-      height: 3rem; }
-      body .login form .form-control input::placeholder {
-        text-align: center; }
-    body .login form .btn-submit {
-      display: block;
-      margin: 2rem auto 0 auto; }
-    body .login a {
-      margin-top: 2rem; }
+    @media (min-width: 768px) and (max-width: 979px) {
+      body .login form .form-control label {
+        margin: 1.2rem auto 0.8rem auto; } }
+    @media (min-width: 980px) and (max-width: 1199px) {
+      body .login form .form-control label {
+        margin: 1.2rem auto 0.8rem auto;
+        font-size: 140%; } }
+    @media (min-width: 1200px) and (max-width: 1999px) {
+      body .login form .form-control label {
+        margin: 1.2rem auto 0.8rem auto;
+        font-size: 180%; } }
+    @media (min-width: 2000px) {
+      body .login form .form-control label {
+        margin: 1.2rem auto 0.8rem auto;
+        font-size: 250%; } }
+  body .login form .form-control input {
+    margin-top: 0.6rem;
+    width: 25rem;
+    height: 3rem; }
+    @media (min-width: 768px) and (max-width: 979px) {
+      body .login form .form-control input {
+        width: 35rem;
+        height: 4rem;
+        margin-bottom: 1.4rem; } }
+    @media (min-width: 980px) and (max-width: 1199px) {
+      body .login form .form-control input {
+        width: 35rem;
+        height: 4rem;
+        margin-bottom: 1.4rem; } }
+    @media (min-width: 1200px) and (max-width: 1999px) {
+      body .login form .form-control input {
+        width: 35rem;
+        height: 4rem;
+        margin-bottom: 1.4rem; } }
+    @media (min-width: 2000px) {
+      body .login form .form-control input {
+        width: 50rem;
+        height: 5rem;
+        margin-bottom: 1.4rem; } }
+    body .login form .form-control input::placeholder {
+      text-align: center; }
+      @media (min-width: 980px) and (max-width: 1199px) {
+        body .login form .form-control input::placeholder {
+          font-size: 140%; } }
+      @media (min-width: 1200px) and (max-width: 1999px) {
+        body .login form .form-control input::placeholder {
+          font-size: 140%; } }
+      @media (min-width: 2000px) {
+        body .login form .form-control input::placeholder {
+          font-size: 200%; } }
+  body .login form .btn-submit {
+    display: block;
+    margin: 2rem auto 0 auto; }
+    @media (min-width: 980px) and (max-width: 1199px) {
+      body .login form .btn-submit {
+        font-size: 140%; } }
+    @media (min-width: 1200px) and (max-width: 1999px) {
+      body .login form .btn-submit {
+        font-size: 140%; } }
+    @media (min-width: 2000px) {
+      body .login form .btn-submit {
+        font-size: 200%; } }
+  body .login a {
+    margin-top: 2rem; }
+    @media (min-width: 980px) and (max-width: 1199px) {
+      body .login a {
+        font-size: 140%; } }
+    @media (min-width: 1200px) and (max-width: 1999px) {
+      body .login a {
+        font-size: 140%; } }
+    @media (min-width: 2000px) {
+      body .login a {
+        font-size: 200%; } }

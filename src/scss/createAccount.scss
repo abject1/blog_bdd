@@ -8,10 +8,24 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        @include l {
+            margin-top: 5rem;
+        }
+        @include xl {
+            margin-top: 5rem;
+        }
+        @include xxl {
+            margin-top: 20rem;
+        }
         h4 {
             margin-top: 1.8rem;
             color: var(--chilean-fire);
+            @include xl {
+                font-size: 250%;
+            }
+            @include xxl {
+                font-size: 300%;
+            }
         }
 
         form {
@@ -23,24 +37,61 @@ body {
                 flex-direction: column;
                 justify-content: center;
                 text-align: center;
+                @include xl {
+                    font-size: 150%;
+                    margin-top: 2rem;
+                }
+                @include xxl {
+                    font-size: 200%;
+                    margin-top: 2.5rem;
+                }
             }
             input {
+                display: block;
                 margin: 0.5rem auto 0.7rem auto;
                 width: 25rem;
                 height: 3rem;
-                
+                @include xl {
+                    width: 45rem;
+                    height: 4rem;
+                }
+                @include xxl {
+                    width: 45rem;
+                    height: 5rem;
+                    margin-top: 1rem;
+                }
                 &::placeholder {
                     text-align: center;
+                    @include xl {
+                        font-size: 170%;
+                    }
+                    @include xxl {
+                        font-size: 200%;
+                    }
                 }
             }
             .btn-submit {
                 display: block;
                 margin: 1.2rem auto 0 auto;
+                @include xl {
+                    font-size: 180%;
+                }
+                @include xxl {
+                    font-size: 200%;
+                    margin-top: 4rem;
+                }
             }
         }
 
         a {
             margin-top: 1.4rem;
+            @include xl {
+                font-size: 160%;
+            }
+            @include xxl {
+                font-size: 220%;
+                margin-top: 2rem;
+            }
         }
 
     }

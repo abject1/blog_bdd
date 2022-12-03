@@ -1,38 +1,123 @@
+@import './media-queries';
+
 h2 {
     text-align: center;
     font-size: 150%;
     margin: 0.8rem auto 1.8rem auto;
+    color: var(--chilean-fire);
+    @include l {
+        font-size: 200%;
+        margin-top: 1.2rem;
+    }
+    @include xl {
+        font-size: 200%;
+        margin-top: 1.4rem;
+    }
+    @include xxl {
+        font-size: 350%;
+        margin-top: 2rem;
+    }
+}
+h4 {
+    text-align: center;
+    font-size: 110%;
+    @include l {
+        font-size: 140%;
+    }
+    @include xl {
+        font-size: 140%;
+    }
+    @include xxl {
+        font-size: 220%;
+    }
 }
 .myArticle {
-    h4 {
-        text-align: center;
-        font-size: 110%;
+
+    @include l {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include xl {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include xxl {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
     .article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding: 0.8rem 1.2rem;
         margin: 2rem;
         border: 0.2rem solid red;
         border-radius: 0.8rem;
+        @include l {
+            padding: 1.4rem 2rem;
+        }
+        @include xl {
+            padding: 1.4rem 2rem;
+        }
+        @include xxl {
+            padding: 1.4rem 2rem;
+        }
         h3, h4, h5, p {
             text-align: center;
         }
         h3 {
             font-size: 130%;
             margin-bottom: 0;
+            @include xl {
+                font-size: 180%;
+                padding-top: 4rem;
+            }
+            @include xxl {
+                font-size: 220%;
+                padding-top: 4rem;
+            }
         }
         h4 {
             font-size: 100%;
             margin: 0.4rem auto;
+            @include xl {
+                font-size: 160%;
+            }
+            @include xxl {
+                font-size: 200%;
+            }
         }
         h5 {
             font-size: 85%;
             margin-top: 0;
+            @include xl {
+                font-size: 140%;
+            }
+            @include xxl {
+                font-size: 180%;
+            }
+        }
+        p {
+            @include xl {
+                font-size: 140%;
+            }
+            @include xxl {
+                font-size: 200%;
+            }
         }
         .commande {
             display: flex;
             justify-content: space-around;
             align-items: center;
             margin-top: 0.6rem;
+            @include xl {
+                font-size: 140%;
+                padding: 2rem 0;
+            }
+            @include xxl {
+                font-size: 180%;
+                padding: 2rem 0;
+            }
         }
     }
 }

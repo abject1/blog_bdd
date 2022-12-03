@@ -119,7 +119,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
 
             <div class="form-control">
-                <label for="password">Mot de pass :</label>
+                <label for="password">Mot de passe :</label>
                 <input type="password" name="password" placeholder="Mot de passe" id="password">
                 <p style="color: red; text-align: center; max-width: 70vw;"><?= $errorPassword ?></p>
             </div>

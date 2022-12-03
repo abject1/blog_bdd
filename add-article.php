@@ -102,7 +102,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <form action="./add-article.php" method="POST">
             <div class="form-control">
                 <label for="title">Titre</label>
-                <input type="text" name="title" id="title" placeholder="Titre" value="<?= $title ?? '' ?>">
+                <textarea name="title" id="title"><?= $title ?? '' ?></textarea>
                 <h3 style="color: red; text-align: center; font-size: 1.2rem;"><?= $errors['title'] ?></h3>
             </div>
             <div class="form-control">

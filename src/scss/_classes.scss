@@ -66,6 +66,16 @@
 .underline {
     background-color: white;
     width: 50vw;
+    @include l {
+        width: 30vw;
+    }
+    @include xl {
+        width: 15vw;
+        margin: 1.4rem auto 1.6rem auto;
+    }
+    @include xxl {
+        width: 15vw;
+    }
     height: 0.4rem;
     display: block;
     margin: 0.8rem auto 1rem auto;

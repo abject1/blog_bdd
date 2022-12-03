@@ -2,15 +2,26 @@
 @import './media-queries';
 
 body {
-    min-height: 100vh;
     .login {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @include xl {
+            margin-top: 7rem;
+        }
+        @include xxl {
+            margin-top: 30rem;
+        }
         h4 {
             margin-top: 8rem;
             color: var(--chilean-fire);
+            @include xl {
+                font-size: 260%;
+            }
+            @include xxl {
+                font-size: 400%;
+            }
         }
         form {
             .form-control {
@@ -19,15 +30,57 @@ body {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                            
+                    @include md {
+                        margin: 1.2rem auto 0.8rem auto;
+                    }
+                    @include l {
+                        margin: 1.2rem auto 0.8rem auto;
+                        font-size: 140%;
+                    }
+                    @include xl {
+                        margin: 1.2rem auto 0.8rem auto;
+                        font-size: 180%;
+                    }
+                    @include xxl {
+                        margin: 1.2rem auto 0.8rem auto;
+                        font-size: 250%;
+                    }
                 }
                 input {
                     margin-top: 0.6rem;
                     width: 25rem;
                     height: 3rem;
-                                    
+                    @include md {
+                        width: 35rem;
+                        height: 4rem;
+                        margin-bottom: 1.4rem;
+                    }  
+                    @include l {
+                        width: 35rem;
+                        height: 4rem;
+                        margin-bottom: 1.4rem;
+                    }  
+                    @include xl {
+                        width: 35rem;
+                        height: 4rem;
+                        margin-bottom: 1.4rem;
+                    }  
+                    @include xxl {
+                        width: 50rem;
+                        height: 5rem;
+                        margin-bottom: 1.4rem;
+                    }  
                     &::placeholder {
                         text-align: center;
+                        @include l {
+                            font-size: 140%;
+                        }
+                        @include xl {
+                            font-size: 140%;
+                        }
+                        @include xxl {
+                            font-size: 200%;
+                        }
                     }
                 }
             }
@@ -35,10 +88,28 @@ body {
             .btn-submit {
                 display: block;
                 margin: 2rem auto 0 auto;
+                @include l {
+                    font-size: 140%;
+                }
+                @include xl {
+                    font-size: 140%;
+                }
+                @include xxl {
+                    font-size: 200%;
+                }
             }
         }
         a {
             margin-top: 2rem;
+            @include l {
+                font-size: 140%;
+            }
+            @include xl {
+                font-size: 140%;
+            }
+            @include xxl {
+                font-size: 200%;
+            }
         }
 
     }

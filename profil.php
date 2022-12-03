@@ -51,8 +51,8 @@ $article = $articleStmt->fetchAll();
 <body>
     <?php include './includes/header.php' ?>
     <h2>Hello <?= $user["prenom"] ?> <?= $user["nom"] ?></h2>
+    <h4>Vos articles</h4>
     <section class="myArticle">
-        <h4>Vos articles</h4>
         <?php foreach ($article as $a) : ?>
             <div class="article">
                 <h3><?= $a['title'] ?></h3>
@@ -61,7 +61,7 @@ $article = $articleStmt->fetchAll();
                 <div class="underline"></div>
                 <p><?= $a['content'] ?></p>
                 <div class="commande">
-                    <button class="btn btn-primary" id="btn">Modifier</button>
+                    <!-- <button class="btn btn-primary" id="btn">Modifier</button> -->
                     <a href="./delete-article.php?id=<?= $a['id'] ?>" type="submit" id="btn" class="btn btn-danger">Supprimer</a>
                 </div>
             </div>

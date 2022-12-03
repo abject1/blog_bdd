@@ -11,10 +11,20 @@ body {
         padding-bottom: 1rem;
         border: 0.15rem solid red;
         border-radius: 1rem;
+        margin: 0.4rem;
         h1 {
             text-align: center;
             color: var(--spring-splash);
             margin-bottom: 1rem;
+            @include l {
+                font-size: 400%;
+            }
+            @include xl {
+                font-size: 500%;
+            }
+            @include xxl {
+                font-size: 600%;
+            }
             a {
                 color: unset;
             }
@@ -25,6 +35,15 @@ body {
             a {
                 color: var(--desert);
                 cursor: grab;
+                @include l {
+                    font-size: 120%;
+                }
+                @include xl {
+                    font-size: 160%;
+                }
+                @include xxl {
+                    font-size: 300%;
+                }
                 i {
                     margin: 0 1rem;
                 }
@@ -47,7 +66,13 @@ body {
             @include md {
                 display: none;
             }
+            @include l {
+                display: none;
+            }
             @include xl {
+                display: none;
+            }
+            @include xxl {
                 display: none;
             }
             span {
@@ -62,11 +87,61 @@ body {
             @include xs {
                 display: none;
             }
+            @include sm {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            }
+            @include md {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            }
+            @include l {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            }
+            @include xl {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            }
+            @include xxl {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            }
             li {
-                margin: 0.3rem auto;
-                max-width: 9rem;
+                text-align: center;
+                margin: 0.3rem 0;
                 padding-bottom: 0.2rem;
                 padding: 0.4rem;
+            }
+            @include l {
+                li {
+                    font-size: 120%;
+                }
+            }
+            @include xl {
+                li {
+                    font-size: 160%;
+                }
+            }
+            @include xxl {
+                li {
+                    font-size: 300%;
+                }
             }
         }
     }

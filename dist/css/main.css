@@ -21,6 +21,7 @@
 /* Landscape phone to portrait tablet */
 /* Portrait tablet to landscape and desktop */
 /* Large desktop */
+/* hyper large desktop */
 :root {
   font-size: 62.5%; }
 
@@ -125,6 +126,16 @@ a {
   height: 0.4rem;
   display: block;
   margin: 0.8rem auto 1rem auto; }
+  @media (min-width: 980px) and (max-width: 1199px) {
+    .underline {
+      width: 30vw; } }
+  @media (min-width: 1200px) and (max-width: 1999px) {
+    .underline {
+      width: 15vw;
+      margin: 1.4rem auto 1.6rem auto; } }
+  @media (min-width: 2000px) {
+    .underline {
+      width: 15vw; } }
 
 .underlineHeader {
   background-color: white;
@@ -137,11 +148,21 @@ body header {
   background: linear-gradient(90deg, var(--dark) 16%, var(--primary) 85%);
   padding-bottom: 1rem;
   border: 0.15rem solid red;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  margin: 0.4rem; }
   body header h1 {
     text-align: center;
     color: var(--spring-splash);
     margin-bottom: 1rem; }
+    @media (min-width: 980px) and (max-width: 1199px) {
+      body header h1 {
+        font-size: 400%; } }
+    @media (min-width: 1200px) and (max-width: 1999px) {
+      body header h1 {
+        font-size: 500%; } }
+    @media (min-width: 2000px) {
+      body header h1 {
+        font-size: 600%; } }
     body header h1 a {
       color: unset; }
   body header .log {
@@ -150,6 +171,15 @@ body header {
     body header .log a {
       color: var(--desert);
       cursor: grab; }
+      @media (min-width: 980px) and (max-width: 1199px) {
+        body header .log a {
+          font-size: 120%; } }
+      @media (min-width: 1200px) and (max-width: 1999px) {
+        body header .log a {
+          font-size: 160%; } }
+      @media (min-width: 2000px) {
+        body header .log a {
+          font-size: 300%; } }
       body header .log a i {
         margin: 0 1rem; }
       body header .log a:hover {
@@ -167,7 +197,13 @@ body header {
   @media (min-width: 768px) and (max-width: 979px) {
     body header #menuBurger {
       display: none; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 980px) and (max-width: 1199px) {
+    body header #menuBurger {
+      display: none; } }
+  @media (min-width: 1200px) and (max-width: 1999px) {
+    body header #menuBurger {
+      display: none; } }
+  @media (min-width: 2000px) {
     body header #menuBurger {
       display: none; } }
   body header #menuBurger span {
@@ -179,8 +215,42 @@ body header {
   @media (max-width: 480px) {
     body header nav {
       display: none; } }
+  @media (min-width: 481px) and (max-width: 767px) {
+    body header nav ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    body header nav ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; } }
+  @media (min-width: 980px) and (max-width: 1199px) {
+    body header nav ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; } }
+  @media (min-width: 1200px) and (max-width: 1999px) {
+    body header nav ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; } }
+  @media (min-width: 2000px) {
+    body header nav ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; } }
   body header nav li {
-    margin: 0.3rem auto;
-    max-width: 9rem;
+    text-align: center;
+    margin: 0.3rem 0;
     padding-bottom: 0.2rem;
     padding: 0.4rem; }
+  @media (min-width: 980px) and (max-width: 1199px) {
+    body header nav li {
+      font-size: 120%; } }
+  @media (min-width: 1200px) and (max-width: 1999px) {
+    body header nav li {
+      font-size: 160%; } }
+  @media (min-width: 2000px) {
+    body header nav li {
+      font-size: 300%; } }
