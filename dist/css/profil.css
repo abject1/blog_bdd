@@ -1,0 +1,30 @@
+h2 {
+  text-align: center;
+  font-size: 150%;
+  margin: 0.8rem auto 1.8rem auto; }
+
+.myArticle h4 {
+  text-align: center;
+  font-size: 110%; }
+
+.myArticle .article {
+  padding: 0.8rem 1.2rem;
+  margin: 2rem;
+  border: 0.2rem solid red;
+  border-radius: 0.8rem; }
+  .myArticle .article h3, .myArticle .article h4, .myArticle .article h5, .myArticle .article p {
+    text-align: center; }
+  .myArticle .article h3 {
+    font-size: 130%;
+    margin-bottom: 0; }
+  .myArticle .article h4 {
+    font-size: 100%;
+    margin: 0.4rem auto; }
+  .myArticle .article h5 {
+    font-size: 85%;
+    margin-top: 0; }
+  .myArticle .article .commande {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.6rem; }

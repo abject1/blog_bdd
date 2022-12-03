@@ -1,0 +1,38 @@
+h2 {
+    text-align: center;
+    font-size: 150%;
+    margin: 0.8rem auto 1.8rem auto;
+}
+.myArticle {
+    h4 {
+        text-align: center;
+        font-size: 110%;
+    }
+    .article {
+        padding: 0.8rem 1.2rem;
+        margin: 2rem;
+        border: 0.2rem solid red;
+        border-radius: 0.8rem;
+        h3, h4, h5, p {
+            text-align: center;
+        }
+        h3 {
+            font-size: 130%;
+            margin-bottom: 0;
+        }
+        h4 {
+            font-size: 100%;
+            margin: 0.4rem auto;
+        }
+        h5 {
+            font-size: 85%;
+            margin-top: 0;
+        }
+        .commande {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 0.6rem;
+        }
+    }
+}
