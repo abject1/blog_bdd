@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             setcookie('signature', $signature, time() + 60 * 60 * 24 * 14, "", "", false, true);
             header('Location: /blog_bdd/profil.php');
         } else {
-            $error = "MOT DE PASSE FAUX";
+            $error = "MOT DE PASSE OU EMAIL FAUX";
         }
     }
 }
